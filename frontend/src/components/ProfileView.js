@@ -5,7 +5,7 @@ const ProfileView = () => {
   const [profile, setProfile] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/profile")
+    axios.get("https://me-api-playground-22ao.onrender.com/profile")
       .then(res => setProfile(res.data[0]))
       .catch(err => console.log(err));
   }, []);

@@ -5,7 +5,7 @@ const ProjectList = ({ skill }) => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    let url = "http://localhost:5000/projects";
+    let url = "https://me-api-playground-22ao.onrender.com/projects";
     if (skill) url += `/skill/${skill}`;
     axios.get(url)
       .then(res => setProjects(res.data))
