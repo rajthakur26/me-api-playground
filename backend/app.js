@@ -6,7 +6,7 @@ require("dotenv").config();
 const profileRoutes = require("./routes/profile");
 const projectRoutes = require("./routes/projects");
 
-const app = express();  
+const app = express();
 app.use(cors());
 app.use(express.json());
 
